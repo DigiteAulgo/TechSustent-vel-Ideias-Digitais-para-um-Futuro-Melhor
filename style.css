@@ -1,0 +1,207 @@
+/* ===== RESET E BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #f0f7f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #0d5c3d;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #7dcea0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #d5f5e3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffffff;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(135deg, #0d5c3d, #1a8a5c);
+    color: white;
+    padding: 4.5rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.95;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #0d5c3d;
+    font-size: 1.9rem;
+}
+
+/* ===== CARDS ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transition: transform 0.25s, box-shadow 0.25s;
+    border-top: 4px solid #1a8a5c;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #0d5c3d;
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: #444;
+    font-size: 0.98rem;
+}
+
+.card .beneficio {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #1a8a5c;
+    font-weight: 600;
+}
+
+/* ===== LISTA DE AÇÕES ===== */
+.lista-acoes {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lista-acoes li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.3rem 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #1a8a5c;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.lista-acoes strong {
+    color: #0d5c3d;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* ===== INTEGRANTES ===== */
+.integrantes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.integrante {
+    background: white;
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    font-weight: 600;
+    color: #0d5c3d;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #0a3d28;
+    color: #b8e0c8;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 700px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}

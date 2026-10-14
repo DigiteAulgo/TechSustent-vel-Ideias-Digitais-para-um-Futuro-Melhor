@@ -1,0 +1,1 @@
+console.log("TechSustentável carregado com sucesso!");
